@@ -1,0 +1,18 @@
+# Ignorowanie plików binarnych
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorowanie katalogu wirtualnego środowiska
+.venv/
+env/
+venv/
+
+# Ignorowanie ustawień IDE
+.idea/
+.vscode/
+*.iml
+
+# Ignorowanie plików logów
+*.log
