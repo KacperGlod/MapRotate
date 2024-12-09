@@ -3,11 +3,11 @@ import random
 from PIL import Image
 import glob
 
-# Ścieżka do folderu z obrazami
-folder_path = os.path.join(os.path.dirname(__file__), 'before')
+# Ścieżka do folderu z obrazami (względna)
+folder_path = os.path.join(os.path.dirname(__file__), '..', 'Images', 'Before')
 
-# Ścieżka do folderu zapisu przetworzonych obrazów
-output_folder = os.path.join(os.path.dirname(__file__), 'after')
+# Ścieżka do folderu zapisu przetworzonych obrazów (względna)
+output_folder = os.path.join(os.path.dirname(__file__), '..', 'Images', 'After')
 os.makedirs(output_folder, exist_ok=True)
 
 
