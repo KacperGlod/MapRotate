@@ -4,10 +4,10 @@ from PIL import Image
 import glob
 
 # Ścieżka do folderu z obrazami
-folder_path = 'C:\\Users\\Kacper\\Downloads\\Przycinanie\\before'
+folder_path = os.path.join(os.path.dirname(__file__), 'before')
 
 # Ścieżka do folderu zapisu przetworzonych obrazów
-output_folder = 'C:\\Users\\Kacper\\Downloads\\Przycinanie\\after'
+output_folder = os.path.join(os.path.dirname(__file__), 'after')
 os.makedirs(output_folder, exist_ok=True)
 
 
@@ -37,4 +37,3 @@ for image_path in glob.glob(os.path.join(folder_path, '*.png')):
     rotate_and_crop_image(image_path, output_path)
 
 print("Przetwarzanie zakończone!")
-
